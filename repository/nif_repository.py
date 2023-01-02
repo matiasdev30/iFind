@@ -1,19 +1,12 @@
-import requests
-from dotenv import load_dotenv
-import os
-import json
+from db import get_value, set_value
+from repository import get_nif_datasource
 
-load_dotenv()
-
-headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
-
-def get_nif(nif: str) -> str :
-    response = requests.get(os.environ["BASE_URL"] + nif, headers=headers)
-    data = json.loads(response.text)
-    if("message" in data):
-        raise Exception("Nif invalido")
-    return data["nome"]
-   
-
-
+def get_nif_repository(nif: str) -> dict:
+    result = get_value(nif=nif)
+    if result != None:
+        return { "origin": "iFind", "nome": result}
+    else:
+        name = get_nif_datasource(nif=nif)
+        set_value(key=nif, value=name)
+        return { "origin": "remote", "nome": name}
 

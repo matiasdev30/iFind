@@ -1,5 +1,5 @@
 import fastapi
-from repository import get_nif
+from repository import get_nif_repository
 
 app = fastapi.FastAPI()
 
@@ -10,9 +10,9 @@ def root():
 @app.get("/find_user/")
 def find_user(nif: str):
     try:
-        data = get_nif(nif=nif)
+        data = get_nif_repository(nif=nif)
         print(data)
-        return { "origin" : "iFind", "nome": data}
+        return data
     except BaseException as e :
         raise fastapi.HTTPException(status_code=404, detail=e.__str__())
     
