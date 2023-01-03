@@ -1,30 +1,24 @@
-# See.K
-## _A simple example of keylogger script in python_
+# iFind
+## _Possibly it will be a national data searcher, at the moment we provide the NIF search service_
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+https://ifind.deta.dev/docs/
 
-See.K a simple keylogger that sends the registered data to the configured email, when connecting to the internet.
-
-## Features
-
-- Send the logs to the configured email
-- The keylogger is hidden in an image
-
+<img width="1440" alt="Captura de ecrã 2023-01-03, às 16 01 09" src="https://user-images.githubusercontent.com/50122963/210383185-d21d4d3d-60ba-4bfb-ac56-2d2d06e9accf.png">
 
 ## Tech
 
 See.K uses a number of open source projects to work properly:
 
 - [FastAPI] - s a modern, fast (high-performance), web framework for building APIs!
-- [pynput] - This library allows you to control and monitor input devices
+- [redis] - For database
+- [requests]
 
 ## Installation
 
 Install the dependencies
 
 ```sh
-pip install requirements.txt 
-python3 see_key.py
+pip install -r requirements.txt 
 ```
 
 ## License
