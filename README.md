@@ -3,6 +3,22 @@
 
 https://ifind.deta.dev/docs/
 
+## Avaliable Routes
+
+Rotas existentes no momento:
+
+- [ deprecated ] `nif/:nif` permite retornar informações de um nif. ( No momento a rota existe, porém será eliminada posteriormente ).
+
+  ```json
+   {
+      "origin": "remote",
+      "data": {
+         "nif": ":nif:",
+         "name": "MATIAS ANTONIO VICTORINA FERNANDO"
+      }
+   }
+  ```
+
 <img width="1440" alt="Captura de ecrã 2023-01-03, às 16 01 09" src="https://user-images.githubusercontent.com/50122963/210383185-d21d4d3d-60ba-4bfb-ac56-2d2d06e9accf.png">
 
 ## Tech
