@@ -1,6 +1,6 @@
 import requests
 from dotenv import load_dotenv
-import os
+import os 
 import json
 
 load_dotenv()
