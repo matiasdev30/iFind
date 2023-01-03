@@ -1,5 +1,5 @@
 # iFind
-## _Possibly it will be a national data searcher, at the moment we provide the NIF search service_
+## _Possibly it will be a national data searcher, at the moment we provide information from a NIF_
 
 https://ifind.deta.dev/docs/
 
