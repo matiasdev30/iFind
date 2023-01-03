@@ -5,9 +5,9 @@ https://ifind.deta.dev/docs/
 
 ## Avaliable Routes
 
-Rotas existentes no momento:
+Currently existing routes:
 
-- [ deprecated ] `nif/:nif` permite retornar informações de um nif. ( No momento a rota existe, porém será eliminada posteriormente ).
+- `/find_user/?nif` allows to return information from a nif.
 
   ```json
    {
@@ -18,6 +18,17 @@ Rotas existentes no momento:
       }
    }
   ```
+  
+  
+  - `/` root route kkkk🤣.
+
+  ```json
+  {
+      "msg": "Bem-Vindo ao iFind"
+  }
+  ```
+  
+
 
 <img width="1440" alt="Captura de ecrã 2023-01-03, às 16 01 09" src="https://user-images.githubusercontent.com/50122963/210383185-d21d4d3d-60ba-4bfb-ac56-2d2d06e9accf.png">
 
